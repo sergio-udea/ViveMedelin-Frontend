@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Home, Calendar, Search, User, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import viveMedLogo from "@/assets/vive-med-logo.png";
 
 export function Navigation() {
@@ -68,11 +69,9 @@ export function Navigation() {
             })}
           </div>
 
-          {/* Dark Mode Toggle */}
+          {/* Theme Toggle */}
           <div className="flex items-center">
-            <Button variant="ghost" size="sm" className="rounded-full">
-              <div className="w-5 h-5 bg-gradient-primary rounded-full" />
-            </Button>
+            <ThemeToggle />
           </div>
         </div>
       </div>
